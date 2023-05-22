@@ -3,17 +3,17 @@
 
     <string name="app_name">Hello MENUS !</string>
     <string name="hello_world">Hello Android Kotlin !</string>
-    <string name="menu_op1">Preferencias</string>
+    <string name="menu_op1">Preferencias </string>
     <string name="menu_op2">Utiles</string>
-    <string name="menu_op3">Agenda</string>
-    <string name="menu_op3_1">SubItem 1 Agenda</string>
-    <string name="menu_op3_2">SubItem 2 Agenda</string>
-    <string name="menu_cont_op1">Item Contextual 1</string>
-    <string name="menu_cont_op2">Item Contextual 2</string>
-    <string name="menu_actionM_op1">Hide buttons</string>
+    <string name="menu_op3">Agenda </string>
+    <string name="menu_op3_1">SubItem 1 Agenda </string>
+    <string name="menu_op3_2">SubItem 2 Agenda </string>
+    <string name="menu_cont_op1">Item Contextual 1 </string>
+    <string name="menu_cont_op2">Item Contextual 2 </string>
+    <string name="menu_actionM_op1">Hide buttons </string>
     <string name="menu_actionM_op2">Change title</string>
     <string name="menu_opSearch">Buscar</string>
-    <string name="pulsada"> pulsada ! </string>
+    <string name="pulsada">  pulsada ! </string>
 
     <string name="collapsible">Collapsible Search Button </string>
     <string name="opcMenu">Opcion Menu pulsada: </string>

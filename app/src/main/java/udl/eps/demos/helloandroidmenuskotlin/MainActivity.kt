@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import udl.eps.demos.helloandroidmenuskotlin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), OnLongClickListener, ActionMode.Callback {
-    private var tv: TextView? = null
     private var mActionMode: ActionMode? = null
     var act: ActionBar? = null
     private lateinit var binding: ActivityMainBinding
@@ -20,8 +19,9 @@ class MainActivity : AppCompatActivity(), OnLongClickListener, ActionMode.Callba
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        registerForContextMenu(binding.textview1);
-        //binding.textview1!!.setOnLongClickListener(this)
+        // CHOOSE THE TYPE OF CONTEXTUAL MENU YOU WANT (Contextual or v)
+        //registerForContextMenu(binding.textview1);
+        binding.textview1.setOnLongClickListener(this)
 
         act = supportActionBar
     }
@@ -82,14 +82,13 @@ class MainActivity : AppCompatActivity(), OnLongClickListener, ActionMode.Callba
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val s: String
-        var v: View
         if (item.itemId == R.id.menu_opSearch) {
             //v = item.getActionView();
             s = getString(R.string.collapsible) + getString(R.string.pulsada)
-            binding.textview1!!.text = s
+            binding.textview1.text = s
         } else {
             s = getString(R.string.opcMenu) + item.title.toString() + getString(R.string.orden) + item.order
-            binding.textview1!!.text = s
+            binding.textview1.text = s
         }
         return true
     }
@@ -107,7 +106,7 @@ class MainActivity : AppCompatActivity(), OnLongClickListener, ActionMode.Callba
         val s: String
         return if (item.itemId == R.id.menu_cont_op1 || item.itemId == R.id.menu_cont_op2) {
             s = getString(R.string.etqOpc) + item.order + getString(R.string.pulsada)
-            binding.textview1!!.text = s
+            binding.textview1.text = s
             true
         } else super.onContextItemSelected(item)
     }
